@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>25 Web AR</title>
+    <style>
+      html,
+      body {
+        /* overflow: hidden; */
+        /* 避免滚动时出现问题 */
+        /* width: 100vw;
+        height: 100vh; */
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* .webgl {
+        position: fixed;
+        top: 0;
+        left: 0;
+        outline: none;
+      } */
+
+      #ar-button {
+        position: fixed;
+        z-index: 1001;
+        padding: 1vh;
+        bottom: 1vh;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <canvas id="mainCanvas" class="webgl"></canvas> -->
+    <button id="ar-button">Start</button>
+    <script src="<%= path %>" charset="utf-8"></script>
+  </body>
+</html>
